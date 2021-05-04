@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   gitea:
-    image: vixcorp/vix-frontend-test
+    image: vixcorp/frontend-test
     container_name: vix-frontend-test
     ports:
       - "127.0.0.1:9191:9191" # 1st gitea
