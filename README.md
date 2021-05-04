@@ -1,6 +1,7 @@
 # VIX FRONTEND TEST
 
 ### Requirements
+- Have an account on [Docker Hub](https://hub.docker.com/)
 - Have [Docker](https://docs.docker.com/engine/install/) installed
 - Have [docker-compose](https://docs.docker.com/compose/install/) installed
 - Do not have services running on the ports (9191, 8181, 8080 and 2222)
@@ -16,7 +17,7 @@ We will provide a docker image for you, this image will have an enviroment like 
 
 ### Step by Step
 
-In order to proced here you have to have all the requirements.
+In order to proceed here you have to have all the requirements.
 
 ##### Clone the Repo
 
@@ -36,6 +37,37 @@ docker-compose up
 - [Gitea](http://localhost:9191) (User: candidate, Password: changeit)
 - [Staging enviroment](http://localhost:8181)
 - [Drone](http://localhost:8080)
+
+
+#### After you solve the test
+
+Commit the available container by just executing this command:
+
+**Change the** `change-here-for-your-docker-hub-username` **for your docker-hub username**
+
+```bash
+docker commit $(docker ps | grep vix-frontend-test | awk '{print $1}') change-here-for-your-docker-hub-username/frontend-test
+```
+
+Then make a docker login:
+
+```bash
+docker login
+```
+
+Then push the image.
+
+**Change the** `change-here-for-your-docker-hub-username` **for your docker-hub username**
+
+```bash
+docker push change-here-for-your-docker-hub-username/frontend-test
+```
+
+Send us back the name of your image, like:
+
+```
+change-here-for-your-docker-hub-username/frontend-test
+```
 
 #### Commom problems
 - drone cookie error (just clear the site data)
