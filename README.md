@@ -27,7 +27,7 @@ git clone https://github.com/vixtech/frontend-test.git
 
 #### Run the docker image
 
-Inside the project direcoty.
+Inside the project directory.
 ```bash
 docker-compose up
 ```
