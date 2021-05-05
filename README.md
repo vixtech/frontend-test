@@ -46,7 +46,7 @@ Commit the available container by just executing this command:
 **Change the** `change-here-for-your-docker-hub-username` **for your docker-hub username**
 
 ```bash
-docker commit $(docker ps | grep vix-frontend-test | awk '{print $1}') change-here-for-your-docker-hub-username/frontend-test
+docker commit $(docker ps | grep frontend-test | awk '{print $1}') change-here-for-your-docker-hub-username/frontend-test
 ```
 
 Then make a docker login:
