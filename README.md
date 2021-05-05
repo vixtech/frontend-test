@@ -17,7 +17,7 @@ We will provide a docker image for you, this image will have an enviroment like 
 
 ### Step by Step
 
-In order to proceed here you have to have all the requirements.
+In order to proceed here you have to have all the [requirements](https://github.com/vixtech/frontend-test#requirements).
 
 ##### Clone the Repo
 
