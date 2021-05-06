@@ -11,7 +11,7 @@
 We will provide a docker image for you, this image will have an enviroment like we have on VIX. It will have:
 
 - GITEA - software development version control.
-- Staging Environment - The application you will work on available for testing purpose.
+- Staging Environment - When you merge something on master this environment will be updated whitin the master branch. (This is not your dev/local env.)
 - Drone - Continuos Integration/Continuos Delivery
 - SSH - Secure Shell 
 
