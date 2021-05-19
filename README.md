@@ -35,8 +35,11 @@ docker-compose up
 #### Access all the services with your browser
 
 - [Gitea](http://localhost:9191) (User: candidate, Password: changeit)
+> The Gitea works like GitHub, you will use the provided user/password to login, and there you will have a repository with some issues to resolve. We expect that you create 1 Pull Request per issue. When all tests of the Pull Request CI/CD pass you can merge the PR yourself. We also expect that you match the PR in the issue and may update the issue with additional info. 
 - [Staging enviroment](http://localhost:8181)
+> All the code that is merged to master is deployed in this environment.
 - [Drone](http://localhost:8080)
+> Drone is our CI/CD application, it will run the pipeline for all commit we push to the repo.
 
 
 #### After you solve the test
